@@ -1,0 +1,142 @@
+<p align="center">
+  <img src="logo.png" width="320" alt="MNEME Engine Logo" />
+</p>
+
+<h1 align="center">MNEME ENGINE</h1>
+
+<p align="center">
+  <b>The Asymptotic Stability, Lyapunov Invariant & Ricci Curvature Flow Engine</b><br>
+  <i>The 5th and Final Pillar of the Cybernetic Oracle Ecosystem</i>
+</p>
+
+<p align="center">
+  <a href="#theoretical-foundations"><img src="https://img.shields.io/badge/Lyapunov_Stability-dV%2Fdt_%E2%89%A4_--%CE%B1%E2%88%A5x--x*%E2%88%A5%C2%B2-ffd166.svg" alt="Lyapunov Stability"></a>
+  <a href="#theoretical-foundations"><img src="https://img.shields.io/badge/Spectral_Contractive-Re(%CE%BB)_%3C_0-9d4edd.svg" alt="Jacobian Spectrum"></a>
+  <a href="#theoretical-foundations"><img src="https://img.shields.io/badge/Ricci_Curvature_%E2%88%82tg--2R-purple.svg" alt="Ricci Flow"></a>
+  <a href="#mcp-protocol"><img src="https://img.shields.io/badge/Protocol-Model_Context_Protocol_(MCP)-blue.svg" alt="MCP Protocol"></a>
+</p>
+
+---
+
+## 🏛️ The Cybernetic Oracle Pentad
+
+In autonomous cybernetics and dynamic control systems, an agent cannot simply plan actions and execute commands without formal guarantees of **asymptotic stability**.
+
+```
+                       ┌───────────────────────────────┐
+                       │           OCULUS              │
+                       │   (Observer / Manifold)       │
+                       │   Riduzione di Dimensione     │
+                       └──────────────┬────────────────┘
+                                      │  Stato proiettato x ∈ M
+                                      ▼
+                       ┌───────────────────────────────┐
+                       │            ANIMA              │
+                       │   (Controller / Trajectory)   │
+                       │   Calcolo dell'Azione δS = 0  │
+                       └──────────────┬────────────────┘
+                                      │  Traiettoria candidata x(t)
+                                      ▼
+     ┌─────────────────────────────────────────────────────────────────┐
+     │                       ORACLE CORE NEXUS                         │
+     │                                                                 │
+     │   ┌───────────────────────────┐   ┌───────────────────────────┐ │
+     │   │          CORIS            │   │          MNEME            │ │
+     │   │ (Dissipative / Heart)     │   │ (Lyapunov / Invariance)   │ │
+     │   │ Omeostasi Termodinamica   │   │ Stabilità Asintotica      │ │
+     │   │ Minimizzazione Energia F  │   │ V_dot(x) < -α ||x - x*||² │ │
+     │   └─────────────┬─────────────┘   └─────────────┬─────────────┘ │
+     └─────────────────┼───────────────────────────────┼───────────────┘
+                       │ Validazione                   │ Certificazione
+                       │ Termica                       │ Spettrale (λ < 0)
+                       └──────────────┬────────────────┘
+                                      │ Traiettoria contrattiva & fredda
+                                      ▼
+                       ┌───────────────────────────────┐
+                       │            DEMON              │
+                       │   (Actuator / Barrier)        │
+                       │   Control Barrier Function    │
+                       │   Blast-Radius = 0            │
+                       └───────────────────────────────┘
+```
+
+1. **OCULUS (The Senses):** Compresses high-dimensional external realities (ASTs, codebases, web) into low-entropy manifolds $\mathcal{M}$ (85–95% token savings).
+2. **ANIMA (The Mind):** Calculates the optimal variational path integral trajectory minimizing Lagrangian action $S = \int (H - \lambda C) dt$.
+3. **CORIS (The Heart):** Regulates thermodynamic Free Energy $\mathcal{F}$, hemodynamic context pressure, and lymphatic antibodies.
+4. **MNEME (The Stability & Memory):** Certifies asymptotic convergence via the Lyapunov invariant $\dot{V}(\mathbf{x}) \le -\alpha \|\mathbf{x} - \mathbf{x}^*\|^2$, computes Jacobian spectral contraction $\text{Re}(\lambda_i) < 0$, regularizes latent metrics via Ricci curvature flow $\partial_t g_{ij} = -2 R_{ij}$, and indexes invariant equilibrium attractors.
+5. **DEMON (The Muscle):** Enforces hard OS security boundaries ($\mathcal{C}_{safe}$), sandbox isolation, and zero-token reflex execution.
+
+---
+
+## 📐 Mathematical Foundations
+
+### 1. The Lyapunov Invariant Certificate
+For a state vector $\mathbf{x} \in \mathbb{R}^n$ and target equilibrium $\mathbf{x}^*$, MNEME defines the positive-definite quadratic candidate function:
+$$V(\mathbf{x}) = \frac{1}{2} (\mathbf{x} - \mathbf{x}^*)^T P (\mathbf{x} - \mathbf{x}^*), \quad P = P^T \succ 0$$
+
+The rate of change along the system flow $\dot{\mathbf{x}} = \mathbf{f}(\mathbf{x})$ must satisfy the **strict asymptotic contraction condition**:
+$$\dot{V}(\mathbf{x}) = \nabla V(\mathbf{x}) \cdot \mathbf{f}(\mathbf{x}) \le -\alpha \|\mathbf{x} - \mathbf{x}^*\|^2 \quad (\alpha > 0)$$
+
+- If $\dot{V}(\mathbf{x}) \ge 0$: **IMMEDIATE REJECTION**. The action accumulates destabilizing energy or enters an uncontrolled divergent mode.
+- If $\dot{V}(\mathbf{x}) < -\alpha \|\mathbf{x} - \mathbf{x}^*\|^2$: **CERTIFIED ASYMPTOTICALLY STABLE**.
+
+### 2. Jacobian Spectral Stability
+MNEME linearizes the trajectory dynamics $\mathbf{f}(\mathbf{x})$:
+$$J = \left. \frac{\partial \mathbf{f}}{\partial \mathbf{x}} \right|_{\mathbf{x}^*}, \quad \text{Sp}(J) = \{\lambda_1, \dots, \lambda_n\}$$
+Stability requires all eigenvalues to lie strictly in the open left-half complex plane:
+$$\max_{i} \text{Re}(\lambda_i(J)) < 0$$
+Any eigenvalue with $\text{Re}(\lambda_k) \ge 0$ indicates a saddle point, Hopf bifurcation, or cyclical deadlock.
+
+### 3. Discrete Ricci Curvature Flow
+Singularities and chaotic bottlenecks in the semantic/task Riemannian manifold $g_{ij}$ are smoothed using Hamilton's Ricci flow:
+$$\frac{\partial g_{ij}}{\partial t} = -2 R_{ij}$$
+This dilates over-compressed bottlenecks and regularizes the geometry into an isotropic, contractive space.
+
+### 4. $\epsilon$-Perturbation Robustness
+MNEME injects bounded stochastic noise $\boldsymbol{\epsilon} \sim \mathcal{N}(0, \sigma^2)$ into the state vector, testing for local Lipschitz continuity and non-expansion:
+$$\frac{\|\mathbf{f}(\mathbf{x} + \boldsymbol{\epsilon}) - \mathbf{f}(\mathbf{x})\|}{\|\boldsymbol{\epsilon}\|} \le L_{max}$$
+
+---
+
+## ⚡ Model Context Protocol (MCP) Interface
+
+MNEME exposes 5 tools over stdio JSON-RPC 2.0:
+
+| Tool | Signature | Description |
+| :--- | :--- | :--- |
+| `mneme_certify_stability` | `(current_state, velocity_vector, target_equilibrium)` | Formally certifies trajectory stability via Lyapunov function $\dot{V} \le -\alpha \|x-x^*\|^2$ and Jacobian spectrum. |
+| `mneme_apply_ricci_flow` | `(metric_tensor, iterations, dt_step)` | Regularizes the latent metric using discrete Ricci flow to eliminate geometric bottlenecks. |
+| `mneme_register_attractor`| `(state_id, equilibrium_coords, basin_radius)` | Stores a certified stable equilibrium state as a persistent topological attractor. |
+| `mneme_check_attractor_basin`| `(state)` | Verifies if a proposed state falls within a known invariant basin of attraction. |
+| `mneme_audit_pentad_alignment`| `(task_description, state_vector)` | Executes an end-to-end cybernetic audit across all 5 engines (Oculus, Anima, Coris, Mneme, Demon). |
+
+---
+
+## 🚀 Quickstart
+
+### 1. Run Unit Tests
+```bash
+python test_mneme_engine.py
+```
+
+### 2. Run the Full Living Pentad Organism
+```bash
+python mneme_pentad_organism.py
+```
+
+### 3. Launch as an MCP Server
+```json
+{
+  "mcpServers": {
+    "mneme-engine": {
+      "command": "python",
+      "args": ["path/to/Mneme-Engine/mneme_mcp.py"]
+    }
+  }
+}
+```
+
+---
+
+## 📜 License
+MIT License. Copyright (c) 2026 Raffaele Di Tullo.
