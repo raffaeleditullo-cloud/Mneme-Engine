@@ -51,6 +51,16 @@ class LivingPentadOrganism:
     """
     L'Organismo Vivente Autonomo Completo a 5 Poli:
     OCULUS -> CORIS -> ANIMA -> MNEME -> DEMON
+
+    Formalizzato come Algoritmo di Contrazione Entropica a Cascata Unidirezionale:
+    Raw Input (H_max) -> OCULUS -> CORIS -> ANIMA -> MNEME -> DEMON -> Action (H_0)
+
+    Condizioni necessarie e sufficienti:
+    1. OCULUS: Estrae il manifold M a bassa dimensionalità prima dell'omeostasi.
+    2. CORIS: Depura il contesto e azzera le scorie metaboliche prima dell'integrazione variazionale.
+    3. ANIMA: Calcola la geodetica a minima azione delta S = 0 nello spazio continuo.
+    4. MNEME: Certifica la contrazione asintotica di Lyapunov (dV/dt < 0) e leviga lo spazio.
+    5. DEMON: Comprime nel collasso deterministico binario con blast radius nullo.
     """
     def __init__(self):
         self.oculus = OculusEngine() if HAS_OCULUS else None
