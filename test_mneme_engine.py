@@ -11,6 +11,7 @@ from mneme_engine import MnemeEngine, StabilityCertificate, RicciFlowResult
 
 class TestMnemeEngine(unittest.TestCase):
     def setUp(self):
+        np.random.seed(42)  # seed fisso: rende deterministici i test con perturbazione epsilon
         self.engine = MnemeEngine(state_dim=5, alpha=0.1)
 
     def test_stable_contractive_trajectory(self):
