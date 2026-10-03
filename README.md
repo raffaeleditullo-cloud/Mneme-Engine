@@ -161,5 +161,20 @@ python mneme_pentad_organism.py
 
 ---
 
+## ⚡ LE ESTENSIONI OPERATIVE DI MNEME: NEMESIS & LAMARCK
+
+MNEME non è un archivio passivo: è il motore della memoria attiva e dell'evoluzione ontologica.  
+Include due estensioni sovrane validate su simulazione fisica continua:
+
+### 1. ⚡ [Estensione NEMESIS](./POTENZIAMENTO_MNEME_NEMESIS.md) (Kinetic Retribution & Breakout)
+* **Principio**: Converte le cicatrici termiche e il trauma dell'assedio in un vettore di sfondamento ad altissima velocità (+55% velocità, +35% frequenza di fuoco).
+* **Risoluzione**: Supera il paradosso dell'omeostasi passiva: l'agente riparato non si limita a difendersi, ma scatena una controffensiva elastica letale verso il centro nevralgico avversario.
+
+### 2. 🧬 [Estensione LAMARCK](./POTENZIAMENTO_MNEME_LAMARCK.md) (Epigenesi Continua in Vita Senza Morte)
+* **Principio**: Supera la trappola darwiniana secondo cui per evolvere un agente deve necessariamente morire.
+* **Risoluzione**: L'agente veterano che accumula kill e sopravvive riceve riscritture nanitiche progressive direttamente sul campo di battaglia e al dock autopoietico (fino a Gen 8/9), pareggiando e superando qualsiasi mutazione da logorio nemico.
+
+---
+
 ## 📜 License
 MIT License. Copyright (c) 2026 Raffaele Di Tullo.
